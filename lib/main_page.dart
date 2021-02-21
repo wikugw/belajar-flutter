@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/inkwell_button_page.dart';
 import 'package:hello_world/media_query_page.dart';
 import 'package:hello_world/second_page.dart';
 import 'package:hello_world/card_page.dart';
@@ -70,6 +71,14 @@ class MainPage extends StatelessWidget {
                 },
                 child: Text('GO TO MEDIA QUERY PAGE'),
               ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return InkwellButtonPage();
+                  }));
+                },
+                child: Text('GO TO INKWELL BUTTON PAGE'),
+              )
             ],
         ),
       ),      
