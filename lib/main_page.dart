@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/custom_card_page.dart';
 import 'package:hello_world/inkwell_button_page.dart';
 import 'package:hello_world/media_query_page.dart';
 import 'package:hello_world/second_page.dart';
@@ -82,10 +83,10 @@ class MainPage extends StatelessWidget {
               RaisedButton(
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return InkwellButtonPage();
+                    return CustomCardPage();
                   }));
                 },
-                child: Text('GO TO INKWELL BUTTON PAGE'),
+                child: Text('GO TO CUSTOM CARD BUTTON PAGE'),
               )
             ],
         ),
