@@ -78,6 +78,14 @@ class MainPage extends StatelessWidget {
                   }));
                 },
                 child: Text('GO TO INKWELL BUTTON PAGE'),
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return InkwellButtonPage();
+                  }));
+                },
+                child: Text('GO TO INKWELL BUTTON PAGE'),
               )
             ],
         ),
