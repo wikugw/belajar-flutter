@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/custom_card_page.dart';
+import 'package:hello_world/hero_page.dart';
 import 'package:hello_world/inkwell_button_page.dart';
 import 'package:hello_world/media_query_page.dart';
 import 'package:hello_world/second_page.dart';
@@ -87,6 +88,14 @@ class MainPage extends StatelessWidget {
                   }));
                 },
                 child: Text('GO TO CUSTOM CARD BUTTON PAGE'),
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return HeroPage();
+                  }));
+                },
+                child: Text('GO TO HERO ANIMATION PAGE'),
               )
             ],
         ),
