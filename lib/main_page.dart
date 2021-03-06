@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/appbar_page.dart';
 import 'package:hello_world/custom_card_page.dart';
 import 'package:hello_world/customer_appbar_height.dart';
 import 'package:hello_world/hero_page.dart';
@@ -105,6 +106,14 @@ class MainPage extends StatelessWidget {
                   }));
                 },
                 child: Text('GO TO CUSTOM APPBAR HEIGHT PAGE'),
+              ),
+               RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return AppbarPage();
+                  }));
+                },
+                child: Text('GO TO APPBAR PAGE'),
               )
             ],
         ),
