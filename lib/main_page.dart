@@ -5,6 +5,7 @@ import 'package:hello_world/customer_appbar_height.dart';
 import 'package:hello_world/hero_page.dart';
 import 'package:hello_world/inkwell_button_page.dart';
 import 'package:hello_world/media_query_page.dart';
+import 'package:hello_world/qr_code_page.dart';
 import 'package:hello_world/second_page.dart';
 import 'package:hello_world/card_page.dart';
 import 'package:hello_world/textfiled_page.dart';
@@ -114,6 +115,14 @@ class MainPage extends StatelessWidget {
                   }));
                 },
                 child: Text('GO TO APPBAR PAGE'),
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return QRCodePage();
+                  }));
+                },
+                child: Text('GO TO QR PAGE'),
               )
             ],
         ),
