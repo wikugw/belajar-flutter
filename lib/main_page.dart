@@ -3,6 +3,7 @@ import 'package:hello_world/appbar_page.dart';
 import 'package:hello_world/colorfull_button_page.dart';
 import 'package:hello_world/custom_card_page.dart';
 import 'package:hello_world/customer_appbar_height.dart';
+import 'package:hello_world/gradient_opacity_masking.dart';
 import 'package:hello_world/hero_page.dart';
 import 'package:hello_world/inkwell_button_page.dart';
 import 'package:hello_world/media_query_page.dart';
@@ -125,13 +126,21 @@ class MainPage extends StatelessWidget {
                 },
                 child: Text('GO TO QR PAGE'),
               ),
-               RaisedButton(
+              RaisedButton(
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context){
                     return ColorfullButtonPage();
                   }));
                 },
                 child: Text('GO TO Colorfull Button PAGE'),
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return GradientOpacityMasking();
+                  }));
+                },
+                child: Text('GO TO GRADIENT OPACITY MASKING PAGE'),
               )
             ],
         ),
