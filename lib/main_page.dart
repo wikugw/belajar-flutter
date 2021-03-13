@@ -7,6 +7,7 @@ import 'package:hello_world/gradient_opacity_masking.dart';
 import 'package:hello_world/hero_page.dart';
 import 'package:hello_world/inkwell_button_page.dart';
 import 'package:hello_world/media_query_page.dart';
+import 'package:hello_world/play_music_page.dart';
 import 'package:hello_world/qr_code_page.dart';
 import 'package:hello_world/second_page.dart';
 import 'package:hello_world/card_page.dart';
@@ -141,6 +142,14 @@ class MainPage extends StatelessWidget {
                   }));
                 },
                 child: Text('GO TO GRADIENT OPACITY MASKING PAGE'),
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return PlayMusicPage();
+                  }));
+                },
+                child: Text('GO TO PLAY MUSIC PAGE'),
               )
             ],
         ),
