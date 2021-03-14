@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/appbar_page.dart';
+import 'package:hello_world/clippath_page.dart';
 import 'package:hello_world/colorfull_button_page.dart';
 import 'package:hello_world/custom_card_page.dart';
 import 'package:hello_world/custom_typography_page.dart';
@@ -168,7 +169,15 @@ class MainPage extends StatelessWidget {
                   }));
                 },
                 child: Text('GO TO CUSTOM TYPOGRAPHY PAGE'),
-              )
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return ClippathPage();
+                  }));
+                },
+                child: Text('GO TO CLIP PATH PAGE'),
+              ),
             ],
         ),
       ),      
