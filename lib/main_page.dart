@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/appbar_page.dart';
 import 'package:hello_world/colorfull_button_page.dart';
 import 'package:hello_world/custom_card_page.dart';
+import 'package:hello_world/custom_typography_page.dart';
 import 'package:hello_world/customer_appbar_height.dart';
 import 'package:hello_world/gradient_opacity_masking.dart';
 import 'package:hello_world/hero_page.dart';
@@ -159,6 +160,14 @@ class MainPage extends StatelessWidget {
                   }));
                 },
                 child: Text('GO TO PLAY MUSIC PAGE'),
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return CustomTypographyPage();
+                  }));
+                },
+                child: Text('GO TO CUSTOM TYPOGRAPHY PAGE'),
               )
             ],
         ),
