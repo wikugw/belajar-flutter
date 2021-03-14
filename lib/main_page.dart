@@ -9,6 +9,7 @@ import 'package:hello_world/inkwell_button_page.dart';
 import 'package:hello_world/media_query_page.dart';
 import 'package:hello_world/play_music_page.dart';
 import 'package:hello_world/qr_code_page.dart';
+import 'package:hello_world/qr_scan_page.dart';
 import 'package:hello_world/second_page.dart';
 import 'package:hello_world/card_page.dart';
 import 'package:hello_world/textfiled_page.dart';
@@ -126,6 +127,14 @@ class MainPage extends StatelessWidget {
                   }));
                 },
                 child: Text('GO TO QR PAGE'),
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return QRScanPage();
+                  }));
+                },
+                child: Text('GO TO QR SCAN PAGE'),
               ),
               RaisedButton(
                 onPressed: (){
